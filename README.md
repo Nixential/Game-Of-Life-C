@@ -13,7 +13,7 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 Clone the repository to your local machine:
 
 ```
-git clone https://github.com/Nixential/Game-Of-Life-C-.git GameOfLife
+git clone https://github.com/Nixential/Game-Of-Life-C.git GameOfLife
 cd GameOfLife
 ```
 
