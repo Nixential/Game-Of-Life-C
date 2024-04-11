@@ -2,8 +2,8 @@
 use strict;
 use warnings;
 
-my $ROWS = 50;
-my $COLS = 50;
+my $ROWS = 100;
+my $COLS = 100;
 
 # Main subroutine to generate the map
 sub generate_map {
@@ -30,7 +30,26 @@ sub generate_map {
     print_map(\@map);
 }
 
-# Existing setup subroutines for glider, blinker, and toad...
+# Subroutine to set up a glider
+sub setup_glider {
+    my ($map_ref) = @_;
+    $map_ref->[2][1] = 1;
+    $map_ref->[3][2] = 1;
+    $map_ref->[1][3] = $map_ref->[2][3] = $map_ref->[3][3] = 1;
+}
+
+# Subroutine to set up a blinker
+sub setup_blinker {
+    my ($map_ref) = @_;
+    $map_ref->[1][1] = $map_ref->[1][2] = $map_ref->[1][3] = 1;
+}
+
+# Subroutine to set up a toad
+sub setup_toad {
+    my ($map_ref) = @_;
+    $map_ref->[2][2] = $map_ref->[2][3] = $map_ref->[2][4] = 1;
+    $map_ref->[3][1] = $map_ref->[3][2] = $map_ref->[3][3] = 1;
+}
 
 # Subroutine to set up a beacon
 sub setup_beacon {
@@ -74,7 +93,6 @@ sub setup_pulsar {
     }
 }
 
-# Existing subroutine to print the map...
 sub print_map {
     my ($map_ref) = @_;
     foreach my $row (@$map_ref) {

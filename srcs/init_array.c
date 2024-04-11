@@ -1,6 +1,6 @@
 #include "../incs/gol.h"
 
-int	**init_array(int num_rows, int num_cols)
+int **init_array(int num_rows, int num_cols)
 {
 	int **array = (int **)malloc(num_rows * sizeof(int *));
 	if (array == NULL)

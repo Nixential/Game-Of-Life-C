@@ -1,8 +1,8 @@
 #include "../incs/gol.h"
 
-bool	check_neigbours(int **map, int i, int j, int num_rows, int num_cols)
+bool check_neigbours(int **map, int i, int j, int num_rows, int num_cols)
 {
-	int	count_neighbours;
+	int count_neighbours;
 
 	count_neighbours = 0;
 	// Check top
@@ -44,7 +44,7 @@ bool	check_neigbours(int **map, int i, int j, int num_rows, int num_cols)
 	return (false);
 }
 
-void	check_alive(int **map, int **buffer, int num_rows, int num_cols)
+void check_alive(int **map, int **buffer, int num_rows, int num_cols)
 {
 	for (size_t j = 0; j < (size_t)num_rows; j++)
 	{

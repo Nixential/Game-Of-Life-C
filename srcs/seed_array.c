@@ -1,6 +1,6 @@
 #include "../incs/gol.h"
 
-void	seed_array(int **arr, int num_rows, int num_cols)
+void seed_array(int **arr, int num_rows, int num_cols)
 {
 	srand(time(NULL));
 	for (size_t i = 0; i < (size_t)num_rows; i++)

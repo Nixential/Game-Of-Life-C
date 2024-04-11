@@ -1,6 +1,6 @@
 #include "../incs/gol.h"
 
-void	display_game(int **map, int num_cols, int num_rows)
+void display_game(int **map, int num_cols, int num_rows)
 {
 	for (int i = 0; i < num_rows; i++)
 	{
