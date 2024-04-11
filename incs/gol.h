@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-#include <stdio.h>
 #include <termios.h>
 #include <signal.h>
 
