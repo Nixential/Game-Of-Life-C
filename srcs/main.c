@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 	while (1)
 	{
 		display_game(map, num_cols, num_rows);
-		usleep(500 * 1000); // Sleep for half a second
+		usleep(150 * 1000); // Sleep for half a second
 		check_alive(map, buffer, num_rows, num_cols);
 		system("clear");
 	}
