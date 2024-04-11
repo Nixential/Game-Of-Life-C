@@ -70,6 +70,5 @@ int main(int argc, char **argv)
 		check_alive(map, buffer, num_rows, num_cols);
 		system("clear");
 	}
-
-	return 0; // This point is never reached
+	return 0;
 }
